@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,8 +21,7 @@ nav {
   justify-content: space-between;
   width: 1280px;
   height: 88px;
-  left: 0px;
-  top: 0px;
+  width: 100%;
 }
 
 nav .logo {
@@ -126,6 +126,7 @@ nav .search-box .input-search:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .container .movie-list .movie-card {
@@ -172,3 +173,9 @@ button {
 }
 
 /* end of container css */
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+}
