@@ -178,4 +178,41 @@ button {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  nav .logo {
+    margin-left: 32px;
+  }
+
+  nav .logo h3 {
+    font-size: 12px;
+  }
+
+  nav .search-box {
+    margin-right: 20px;
+  }
+
+  .container .popular {
+    border-radius: 15px;
+    background-color: #e5dd16;
+    margin-left: 30px;
+  }
+
+  .container .popular span {
+    font-size: 8px;
+  }
+
+  .container .movie-list .movie-card {
+    width: 40%;
+  }
+
+  .container .movie-list .movie-card .movie-desc h3 {
+    font-size: 8px;
+  }
+
+  .movie-desc-bawah .movie-release-date h5 {
+    font-size: 6px;
+  }
+
+  .movie-desc-bawah .movie-rat h5 {
+    font-size: 6px;
+  }
 }
