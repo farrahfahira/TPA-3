@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* navbar css */
+nav {
+  background-color: #000;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+}
+
+nav .logo {
+  margin-left: 65px;
+}
+
+nav .logo h3 {
+  margin-top: 29px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+nav .logo span {
+  color: #e5dd16;
+}
+
+nav .search-box {
+  margin-right: 120px;
+  position: relative;
+}
+
+nav .search-box .btn-search {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+nav .search-box .btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+nav .search-box .input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #000;
+  padding-right: 40px;
+  color: #fff;
+}
+
+nav .search-box .input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+nav .search-box .input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/* end of navbar css */
+
+/* container css */
+
+.container {
+  background-color: #000;
+}
+
+.container .popular {
+  border-radius: 20px;
+  background-color: #e5dd16;
+  margin-left: 75px;
+}
+
+.container .popular span {
+  font-size: 18px;
+  margin: 1rem;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.container .movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .movie-list .movie-card {
+  margin: 1rem;
+  position: relative;
+  width: 20%;
+}
+
+.container .movie-list .movie-card .thumbnail img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.container .movie-list .movie-card .movie-desc {
+  color: #eee;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.container .movie-list .movie-card .movie-desc h3 {
+  margin-top: 0;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.container .movie-list .movie-card .movie-desc .movie-desc-bawah {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-desc-bawah .movie-release-date h5 {
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+button {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.checked {
+  color: rgba(255, 225, 0, 0.801);
+}
+
+/* end of container css */
